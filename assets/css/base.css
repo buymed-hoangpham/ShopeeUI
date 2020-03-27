@@ -10,13 +10,13 @@
 
 html {
     font-size: 62.5%; /*==10px*/
-    line-height: 1.6px;
+    line-height: 1.2rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 .grid {
-    width: 1200px;
+    width: 1220px;
     max-width: 100%;
     margin: 0 auto;
 }

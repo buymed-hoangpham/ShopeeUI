@@ -1,0 +1,119 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #FF6633, #F63F2E);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;   
+    position: relative;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.header__navbar-item {
+    padding: 0 8px;  
+    position: relative;
+    min-height: 20px;
+}
+
+.header__navbar-has-qr:hover .header__qr{
+    display: block;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 450;
+}
+
+.header__navbar-item,
+.header__navbar-item-link, 
+.header__navbar-icon-link {
+    display: inline-block;
+    align-items: center;
+}
+
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.header__navbar-title--no-pointer {
+    cursor: text;
+    color: var(--white-color) !important;
+}
+
+.header__navbar-icon-link{
+    cursor: pointer;
+}
+
+.header__navbar-item--separate {
+    border-right: 2px solid hsla(0, 0%, 100%, .22);
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon{
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+
+/* QR Code Download */
+.header__qr {   
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0%;
+    top: 125%;
+    border-radius: 2px;
+    display: none;
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    top: -15px;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    left: 0%;
+    margin-top: -8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.header__qr-download-link:nth-child(1) {
+    margin-left: 11px;
+}
+
+.header__qr-download-link:nth-child(2) {
+    margin-right: 11px;
+    padding-bottom: 2px;
+}
+
+.header__qr-download-img {
+    height: 17.5px;
+}
+

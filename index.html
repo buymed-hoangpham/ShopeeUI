@@ -6,6 +6,7 @@
     <title>
       Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website
     </title>
+    <link rel="icon" href="assets/img/shopee_logo.png" type="image/png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -20,6 +21,7 @@
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-5.13.0-web/css/all.min.css"
     />
+
   </head>
   <body>
     <div class="app">
@@ -30,7 +32,9 @@
               <li class="header__navbar-item header__navbar-item--separate">
                 <a href="" class="header__navbar-item-link">Kênh Người Bán</a>
               </li>
-              <li class="header__navbar-item header__navbar-has-qr header__navbar-item--separate">
+              <li
+                class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separate"
+              >
                 Tải ứng dụng
                 <div class="header__qr">
                   <img
@@ -40,39 +44,135 @@
                   />
                   <div class="header__qr-apps">
                     <a href="" class="header__qr-download-link">
-                        <img
+                      <img
                         src="assets/img/googleplay.png"
                         alt="Google Play"
                         class="header__qr-download-img"
-                        />
+                      />
                     </a>
                     <a href="" class="header__qr-download-link">
-                        <img
+                      <img
                         src="assets/img/appstore.png"
                         alt="App Store"
                         class="header__qr-download-img"
-                        />
+                      />
                     </a>
-                    
                   </div>
                 </div>
               </li>
               <li class="header__navbar-item">
                 <span class="header__navbar-title--no-pointer">Kết nối</span>
-                <a href="" class="header__navbar-icon-link">
+                <a
+                  href=""
+                  class="header__navbar-icon-link"
+                  data-toggle="tooltip"
+                  title="Kết nối Facebook"
+                >
                   <i class="header__navbar-icon fab fa-facebook"></i>
                 </a>
-                <a href="" class="header__navbar-icon-link">
+                <a
+                  href=""
+                  class="header__navbar-icon-link"
+                  data-toggle="tooltip"
+                  title="Kết nối Instagram"
+                >
                   <i class="header__navbar-icon fab fa-instagram"></i>
                 </a>
               </li>
             </ul>
             <ul class="header__navbar-list">
-              <li class="header__navbar-item">
+              <li class="header__navbar-item header__navbar-item-has-notify">
                 <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon far fa-bell"></i>
                   Thông báo
                 </a>
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://cf.shopee.vn/file/e8f8aa14b0ad4309deb71ca768d09ee3"
+                          alt="Ohui image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Xác thực chính hãng nguồn gốc các sản phẩm
+                            Ohui</span
+                          >
+                          <span class="header__notify-descrip"
+                            >Hidden Tag là giải pháp xác thực hàng chính hãng
+                            bằng công nghệ tiên tiến nhất hiện nay.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://product.hstatic.net/1000391653/product/ao-tre-hoa-da-ohui-the-first-geniture_171d92b7af054630b7477b2da6c9628f_c904dab183684775a83eb2e7ae4aeac5.jpg"
+                          alt="Ohui image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Sale Sốc bộ dưỡng Ohui The First Tái tạo trẻ háo da
+                            SALE OFF 70%</span
+                          >
+                          <span class="header__notify-descrip"
+                            >Giá chỉ còn 375.000 (giá gốc: 1.250.000 vnd).</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://cf.shopee.vn/file/9b10079fccf8e32e7f7f0030ddbe0eda"
+                          alt="Ohui image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Ohui chính thức ra mắt dòng son lì mới THE FIRST
+                            GENITURE LIPSTICK</span
+                          >
+                          <span class="header__notify-descrip"
+                            >Mộ làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                            luôn là điều mà các quý cô ao ước.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgxn8GYWenHJehPaPL4e2gphdNC4r1Hy6zhnxz8Gys5z0avuPB"
+                          alt="Ohui image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >VOUCHER TỪ AIRPAY CHO KHÁCH HÀNG THÂN THUỘC</span
+                          >
+                          <span class="header__notify-descrip"
+                            >Voucher giảm 100% tối đa 50k đã có sẵn trong ví
+                            bạn. Mã có hiệu lực đến 23h59 ngày 10/4/2020. Số
+                            lượng có hạn và chỉ có hiệu lực cho khách hàng nhận
+                            được thông báo này. Mã giảm giá có thể thay đổi hiệu
+                            lực tùy vào Shopee và Airpay. Click xem ngay!
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                  </footer>
+                </div>
               </li>
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
@@ -93,5 +193,115 @@
       <div class="container"></div>
       <footer class="footer"></footer>
     </div>
+
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body"> -->
+            <!-- Register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input  type="input" class="auth-form__input" placeholder="Email của bạn"></input>
+                        </div>
+                        <div class="auth-form__group">
+                            <input  type="password" class="auth-form__input" placeholder="Mật khẩu của bạn"></input>
+                        </div>
+                        <div class="auth-form__group">
+                            <input  type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu"></input>
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng với việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normalauth-form__controls-back">
+                            TRỞ LẠI
+                        </button>
+                        <button class="btn btn--primary">
+                            ĐĂNG KÝ
+                        </button>
+                    </div>                   
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form-socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form-socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                        Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>      -->
+
+            <!-- Login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input  type="input" class="auth-form__input" placeholder="Email/Số Điện thoại/Tên đăng nhập"></input>
+                        </div>
+                        <div class="auth-form__group">
+                            <input  type="password" class="auth-form__input" placeholder="Mật khẩu"></input>
+                        </div>                       
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form--separate"></span>    
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">
+                            TRỞ LẠI
+                        </button>
+                        <button class="btn btn--primary">
+                            ĐĂNG NHẬP
+                        </button>
+                    </div>                   
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form-socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form-socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                        Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </div> -->
+
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>

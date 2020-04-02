@@ -3,4 +3,7 @@
 @import './nav.css';
 
 /* Container */
-@import 'container.css'
+@import 'container.css';
+
+/* Footer */
+@import './footer.css';

@@ -1,3 +1,6 @@
 /* Header */
 /* Header - Navbar */
 @import './nav.css';
+
+/* Container */
+@import 'container.css'

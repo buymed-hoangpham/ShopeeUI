@@ -65,6 +65,28 @@
     color: var(--primary-color);
 }
 
+/* Mobi category */
+.mobile-category {
+
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+}
+
+.mobile-category__item {
+
+}
+
+.mobile-category__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
 /* Home sort + filter */
 .home-filter {
     display: flex;

@@ -67,24 +67,59 @@
 
 /* Mobi category */
 .mobile-category {
-
+    display: none;
 }
 
 .mobile-category__list {
     display: flex;
     list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Ẩn thanh scroll bar của thuộc tính overflow-x trên */
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
 }
 
 .mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
 
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88cf81;
 }
 
 .mobile-category__link {
+    --line-height: 2rem;
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     text-align: center;
+    width: 115px;
+    border-radius: 4px;
+    font-weight: 300;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    padding: 0 6px;
 }
 
 /* Home sort + filter */

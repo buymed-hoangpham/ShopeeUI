@@ -493,7 +493,7 @@
 }
 
 .header__mobile-search {
-
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -728,6 +728,7 @@ header__search-option-item:last-child {
     position: relative;
     display: inline-block;
     padding: 8px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -958,6 +959,7 @@ header__search-option-item:last-child {
 
 .header__sort-item--active .header__sort-link {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .header__sort-item:first-child .header__sort-link::before {

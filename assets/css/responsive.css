@@ -1,9 +1,6 @@
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
+    
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -26,14 +23,38 @@
     }
     .app__container {
         margin-top: calc(var(--header-height) + 46px);
+        /* margin-left: 50px; */
     }
     .header__sort-bar{
         display: flex;
+    }
+    .app__content {
+        padding-top: 6px;
+    }
+    .mobile-category {
+        display: block;
+    }
+    .category {
+        display: none;
+    }
+    .grid__column-2-4 {
+        width: 33.33333%;
+    }
+    .home-product__pagination {
+        margin: 20px 0;
+        padding: 0;
+    }
+    .pagination-item {
+        margin: 0;
     }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
     .hide-on-tablet {
         display: none;
     }
@@ -45,6 +66,20 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+    @keyframes mobileSearchSideIn {
+        form {
+            top: calc(var(--header-height) / 2);
+            opacity: 0;
+        }
+        to {
+            top: var(--header-height);
+            opacity: 1;
+        }
+    }
     .hide-on-mobile {
         display: none;
     }
@@ -73,15 +108,33 @@
         left: 0;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
-    
-    @keyframes mobileSearchSideIn {
-        form {
-            top: calc(var(--header-height) / 2);
-            opacity: 0;
-        }
-        to {
-            top: var(--header-height);
-            opacity: 1;
-        }
+    .header__mobile-search {
+        display: block;
+    }
+    .header__logo-img {
+        width: 100px;
+    }
+    .header__cart {
+        margin-right: 10px;
+    }
+    .footer__content {
+        padding: 0 16px;
+    }
+    .footer__heading {
+        text-align: center;
+    }
+    .footer__download,
+    .footer-item__link {
+        justify-content: center;
+    }
+    .footer__download-apps {
+        flex: unset;
+    }
+    .grid__row {
+        padding: 0 2px;
+    }
+    .footer__download-app-link {
+        display: block;
+        padding: 6px 8px;
     }
 }

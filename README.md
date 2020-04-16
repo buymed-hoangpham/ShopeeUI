@@ -2,6 +2,9 @@
 
 Design Shopee Web - an exercise for codersX course
 
+## Link to web demo: 
+https://css-project-coderx-2020.web.app
+
 ## How to run the website
 
 1. Clone this repo
